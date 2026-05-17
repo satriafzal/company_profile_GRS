@@ -47,5 +47,5 @@ const brandName = ref('PT Gemilang Raya Sejati');
 </script>
 
 <style scoped>
-@import '@/assets/style/Navbar.css';
+    @import '@/assets/style/Navbar.css';
 </style>
