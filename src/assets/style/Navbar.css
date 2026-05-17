@@ -1,0 +1,43 @@
+/* 1. Warna Background Navbar Abu-abu Muda */
+.custom-bg-nav {
+  background-color: #EBECEF; /* Warna abu-abu terang mirip di desain */
+}
+
+/* 2. Ukuran Logo */
+.navbar-logo {
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+}
+
+/* 3. Warna Menu Inactive */
+.nav-link {
+  color: #555555 !important;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #A44A32 !important;
+}
+
+/* 4. Warna Menu Active (Home) dengan garis bawah */
+.custom-active {
+  color: #A44A32 !important; /* Warna merah bata */
+  font-weight: 700;
+  border-bottom: 2px solid #A44A32;
+  padding-bottom: 2px;
+}
+
+/* 5. Tombol Inquiry Hitam Solid & Tajam */
+.custom-btn-inquiry {
+  background-color: #000000;
+  border: none;
+  border-radius: 0px; /* Ujung kotak tanpa lengkungan */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.custom-btn-inquiry:hover {
+  background-color: #333333;
+}
