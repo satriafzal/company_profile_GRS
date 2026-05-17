@@ -13,7 +13,7 @@ import Footer from './components/Footer.vue';
 
 <style>
   body {
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   overflow-x: hidden;
 }
@@ -26,6 +26,6 @@ html, body {
   background-color: #f8f9fa;
   max-width: 100vw;
   overflow-x: hidden !important;
-  scroll-padding-top: 20px;
+  scroll-padding-top: 65px;
 }
 </style>
