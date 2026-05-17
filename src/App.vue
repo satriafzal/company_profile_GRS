@@ -26,6 +26,6 @@ html, body {
   background-color: #f8f9fa;
   max-width: 100vw;
   overflow-x: hidden !important;
-  scroll-padding-top: 65px;
+  scroll-padding-top: 20px;
 }
 </style>
