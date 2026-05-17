@@ -1,7 +1,8 @@
 .hero-section {
     min-height: 90vh;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     padding-top: 80px;
+    padding-bottom: 4rem;
 }
 
 .hero-title {
@@ -31,7 +32,7 @@
 }
 
 .about-section {
-    background-color: #F8F9FA;
+    background-color: #F8F9FA !important;
 }
 
 p {
@@ -82,6 +83,7 @@ p {
 
 .solution-section {
     background-color: #f8f9fa;
+    padding-top: 5rem !important;
 }
 
 .industry-card {
@@ -126,6 +128,7 @@ p {
 /* Styling Contact Section */
 .contact-section {
   background-color: #ffffff;
+    padding-top: 4.5rem !important;
 }
 
 /* Label Form (Teks kecil di atas kotak input) */
@@ -179,4 +182,28 @@ p {
   width: 100%;
   border-radius: 0px; /* Ujung kotak tajam */
   display: block; /* Mencegah ada sisa space kosong di bawah map */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    /* Ngebatalin paksaan tinggi full layar, jadi tingginya ngikutin isi konten aja */
+    min-height: auto !important; 
+    
+    /* Jarak atas biar teks ga ketutup navbar */
+    padding-top: 130px !important; 
+    
+    /* Jarak bawah biar gak terlalu nempel sama section gambar di bawahnya */
+    padding-bottom: 2rem !important; 
+
+    /* TAMBAHIN KODE INI BUAT NAIKIN KATALOG */
+    .about-section {
+        /* Pangkas jarak kosong di bawah section About */
+        padding-bottom: 1rem !important; 
+    }
+
+    .product-section {
+        /* Pangkas jarak kosong di atas section Katalog */
+        padding-top: 1rem !important; 
+    }
+  }
 }
