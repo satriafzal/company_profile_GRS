@@ -1,0 +1,42 @@
+.custom-footer {
+    background-color: #261d16;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.copyright-text {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    /* Putih transparan */
+    line-height: 1.5;
+}
+
+.footer-links .list-inline-item {
+    margin: 0 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-icon {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #ffffff;
+}
+
+.footer-icon svg {
+    width: 18px;
+    height: 18px;
+}
