@@ -6,8 +6,8 @@
 }
 
 .hero-title {
-    font-size: clamp(2rem, 4vw, 3.2rem); 
-    line-height: 1.2; 
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
     letter-spacing: -1px;
     color: #111;
 }
@@ -16,6 +16,27 @@
     font-size: 1.1rem;
     max-width: 550px;
     line-height: 1.6;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-company-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.hero-company-img:hover {
+    transform: scale(1.02);
 }
 
 .btn-primary-custom {
@@ -79,6 +100,13 @@ p {
 .card-overlay h4 {
     font-size: 1.4rem;
     letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin-bottom: 0.4rem !important;
+}
+
+.card-overlay p {
+    line-height: 1.35;
+    margin-bottom: 0;
 }
 
 .solution-section {
@@ -87,7 +115,7 @@ p {
 }
 
 .industry-card {
-    height: 300px;
+    height: 350px;
     overflow: hidden;
     border-radius: 0px;
 }
@@ -100,6 +128,10 @@ p {
     top: 0;
     left: 0;
     transition: transform 0.5s ease;
+}
+
+.industry-img-semen {
+    object-position: center bottom;
 }
 
 .industry-card:hover .industry-img {
@@ -127,83 +159,80 @@ p {
 
 /* Styling Contact Section */
 .contact-section {
-  background-color: #ffffff;
+    background-color: #ffffff;
     padding-top: 4.5rem !important;
 }
 
 /* Label Form (Teks kecil di atas kotak input) */
 .custom-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #555;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
 }
 
 /* Kotak Input Form */
 .custom-input {
-  border-radius: 0px; /* Bikin ujungnya tajam/kotak */
-  border: 1px solid #d1d1d1; /* Warna garis kotak abu-abu soft */
-  padding: 0.75rem 1rem;
-  font-size: 0.95rem;
+    border-radius: 0px;
+    border: 1px solid #d1d1d1;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
 }
 
-/* Pas kotak input di-klik (fokus) */
 .custom-input:focus {
-  border-color: #000000; /* Garis berubah jadi hitam */
-  box-shadow: none; /* Matiin efek cahaya biru Bootstrap */
+    border-color: #000000;
+    box-shadow: none;
 }
 
 /* Tombol Submit */
 .custom-btn-submit {
-  border-radius: 0px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 0.85rem;
+    border-radius: 0px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
 }
 
 /* Teks Merah Bata (Headquarters & Global Logistics) */
 .custom-subtitle {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #A44A32; /* Sesuaikan dengan warna bata lu sebelumnya */
-  letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #A44A32;
+    letter-spacing: 1px;
 }
 
 /* Gambar Map */
 .custom-map-img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 0px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0px;
 }
 
 .custom-map-iframe {
-  height: 250px;
-  width: 100%;
-  border-radius: 0px; /* Ujung kotak tajam */
-  display: block; /* Mencegah ada sisa space kosong di bawah map */
+    height: 250px;
+    width: 100%;
+    border-radius: 0px;
+    display: block;
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    /* Ngebatalin paksaan tinggi full layar, jadi tingginya ngikutin isi konten aja */
-    min-height: auto !important; 
-    
-    /* Jarak atas biar teks ga ketutup navbar */
-    padding-top: 130px !important; 
-    
-    /* Jarak bawah biar gak terlalu nempel sama section gambar di bawahnya */
-    padding-bottom: 2rem !important; 
+    .hero-section {
+        min-height: auto !important;
 
-    /* TAMBAHIN KODE INI BUAT NAIKIN KATALOG */
-    .about-section {
-        /* Pangkas jarak kosong di bawah section About */
-        padding-bottom: 1rem !important; 
+        padding-top: 130px !important;
+
+        padding-bottom: 2rem !important;
+
+        .about-section {
+            padding-bottom: 1rem !important;
+        }
+
+        .product-section {
+            padding-top: 1rem !important;
+        }
     }
 
-    .product-section {
-        /* Pangkas jarak kosong di atas section Katalog */
-        padding-top: 1rem !important; 
+    .hero-company-img {
+        height: 260px;
     }
-  }
 }

@@ -41,3 +41,12 @@
 .custom-btn-inquiry:hover {
   background-color: #333333;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 0.9rem !important; /* Mengecilkan teks logo di HP */
+    max-width: 75%; /* Membatasi lebar teks agar tidak menabrak tombol */
+    white-space: normal; 
+  }
+  
+}
