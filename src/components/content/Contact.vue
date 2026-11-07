@@ -187,7 +187,8 @@ const submitForm = async () => {
             <div class="mb-4">
               <span class="custom-subtitle d-block mb-2">GLOBAL LOGISTICS</span>
               <p class="text-secondary mb-1">Direct Inquiry: +62-232-5701-077</p>
-              <p class="text-secondary">Email: Ptgemilangrayasejahtera@gmail.com</p>
+              <p class="text-secondary mb-1">WhatsApp: +62 296-8150-013</p>
+              <p class="text-secondary">Email: ptgemilangrayasejahtera@gmail.com</p>
             </div>
 
             <div class="map-wrapper mt-4">
