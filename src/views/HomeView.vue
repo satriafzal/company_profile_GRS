@@ -11,10 +11,10 @@ import Contact from '@/components/content/Contact.vue';
     <!-- home section -->
     <section id="home" class="hero-section d-flex align-items-center" data-aos-delay="500">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <!-- Kolom Teks (Kiri) -->
           <div class="col-lg-6" data-aos="fade-up">
-            <h1 class="hero-title fw-bold text-uppercase mt-5">
+            <h1 class="hero-title fw-bold text-uppercase">
               Presisi Mineral <br>
               Untuk Solusi <br>
               Industri Yang <br>
@@ -35,12 +35,12 @@ import Contact from '@/components/content/Contact.vue';
           </div>
 
           <!-- Kolom Foto Perusahaan (Kanan) -->
-          <div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="hero-image-wrapper mt-4 mt-lg-5">
+          <div class="col-lg-6 ps-lg-5 d-flex justify-content-center justify-content-lg-end" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero-image-wrapper">
               <img
-                src="/image/heronew.png"
-                alt="Foto Perusahaan PT Gemilang Raya Sejahtera"
-                class="img-fluid rounded hero-company-img"
+                src="/image/hero_square.jpg"
+                alt="Logo PT Gemilang Raya Sejahtera"
+                class="hero-company-img"
                 fetchpriority="high"
                 decoding="async"
               />
