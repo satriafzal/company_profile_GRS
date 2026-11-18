@@ -33,7 +33,7 @@
 
         <div class="col-12 col-md-8" data-aos="fade-up" data-aos-delay="400">
           <div class="industry-card position-relative w-100">
-            <img src="/image/semen.jpg" alt="Construction and Cement" class="industry-img industry-img-semen" loading="lazy" decoding="async" />
+            <img src="/image/cement.png" alt="Construction and Cement" class="industry-img industry-img-semen" loading="lazy" decoding="async" />
             <div class="industry-overlay">
               <h5 class="text-white fw-bold mb-0">Construction &amp; Cement</h5>
             </div>
