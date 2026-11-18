@@ -5,11 +5,13 @@ import { ref, onUnmounted } from 'vue'
 const loading = ref(false)
 const cooldown = ref(0)
 let cooldownTimer = null
+let successTimer = null
 const successMessage = ref('')
 const errorMessage = ref('')
 
 onUnmounted(() => {
   if (cooldownTimer) clearInterval(cooldownTimer)
+  if (successTimer) clearTimeout(successTimer)
 })
 
 const form = ref({
@@ -20,7 +22,7 @@ const form = ref({
   botcheck: false
 })
 
-const startCooldown = (seconds = 30) => {
+const startCooldown = (seconds = 10) => {
   cooldown.value = seconds
   if (cooldownTimer) clearInterval(cooldownTimer)
   cooldownTimer = setInterval(() => {
@@ -39,10 +41,15 @@ const submitForm = async () => {
   // Honeypot check: jika botcheck dicentang/diisi (oleh bot), batalkan tanpa kirim ke API
   if (form.value.botcheck) {
     successMessage.value = 'Your inquiry has been sent successfully. Thank you for contacting us'
+    if (successTimer) clearTimeout(successTimer)
+    successTimer = setTimeout(() => {
+      successMessage.value = ''
+    }, 3000)
     return
   }
 
   loading.value = true
+  if (successTimer) clearTimeout(successTimer)
   successMessage.value = ''
   errorMessage.value = ''
 
@@ -54,7 +61,7 @@ const submitForm = async () => {
         Accept: 'application/json'
       },
       body: JSON.stringify({
-        access_key: '9d7ca3bd-406d-4c2a-8e09-981b6bc09cb7',
+        access_key: '8949c767-370e-4f47-a8c6-c2405057aa76',
         subject: 'New Business Inquiry - Gemilang Raya Sejahtera',
         name: form.value.fullName,
         company: form.value.companyName,
@@ -68,6 +75,10 @@ const submitForm = async () => {
 
     if (response.ok && result.success) {
       successMessage.value = 'Your inquiry has been sent successfully. Thank you for contacting us'
+      if (successTimer) clearTimeout(successTimer)
+      successTimer = setTimeout(() => {
+        successMessage.value = ''
+      }, 3000)
 
       form.value = {
         fullName: '',
@@ -77,7 +88,7 @@ const submitForm = async () => {
         botcheck: false
       }
 
-      startCooldown(30)
+      startCooldown(10)
     } else {
       errorMessage.value = 'Failed to send your inquiry. Please try again!'
       console.error(result)
