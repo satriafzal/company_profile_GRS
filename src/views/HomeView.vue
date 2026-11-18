@@ -38,7 +38,7 @@ import Contact from '@/components/content/Contact.vue';
           <div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <div class="hero-image-wrapper mt-4 mt-lg-5">
               <img
-                src="/image/hero.jpg"
+                src="/image/heronew.png"
                 alt="Foto Perusahaan PT Gemilang Raya Sejahtera"
                 class="img-fluid rounded hero-company-img"
                 fetchpriority="high"
