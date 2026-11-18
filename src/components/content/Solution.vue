@@ -15,7 +15,7 @@
 
         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="industry-card position-relative w-100">
-            <img src="/image/paint.png" alt="Paint and Coatings" class="industry-img" loading="lazy" decoding="async" />
+            <img src="/image/cat.png" alt="Paint and Coatings" class="industry-img" loading="lazy" decoding="async" />
             <div class="industry-overlay">
               <h5 class="text-white fw-bold mb-0">Paint &amp; Coatings</h5>
             </div>
