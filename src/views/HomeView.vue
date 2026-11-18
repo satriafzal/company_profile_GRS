@@ -35,11 +35,11 @@ import Contact from '@/components/content/Contact.vue';
           </div>
 
           <!-- Kolom Foto Perusahaan (Kanan) -->
-          <div class="col-lg-6 ps-lg-5 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 ps-lg-5 d-flex justify-content-center justify-content-lg-end" data-aos="fade-up" data-aos-delay="200">
             <div class="hero-image-wrapper">
               <img
-                src="/image/logo.jpeg"
-                alt="Foto Perusahaan PT Gemilang Raya Sejahtera"
+                src="/image/hero_square.jpg"
+                alt="Logo PT Gemilang Raya Sejahtera"
                 class="hero-company-img"
                 fetchpriority="high"
                 decoding="async"
